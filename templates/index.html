@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+</head>
+<body>
+
+    <!-- 🔹 Header with Navigation -->
+    <header>
+        <h1>🔍 Cybersecurity Scanner</h1>
+        <nav>
+            <ul>
+                <li><a href="/">🏠 Home</a></li>
+                <li><a href="/about">ℹ️ About</a></li>  <!-- About Page Link Added -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 Scanner Input Form -->
+    <div class="container">
+        <h2>🔎 Scan Your Target</h2>
+        <br>
+        <form action="/" method="post">
+            <label for="target">Enter Target (URL, Domain, or IP):</label>
+            <br>
+            <input type="text" name="target" id="target" required placeholder="example.com or 192.168.1.1">
+            <label for="scan_type">Select Scan Type:</label>
+            <select name="scan_type" id="scan_type">
+                <option value="full_scan">🔹 Full Scan</option>
+                <option value="ports">🔹 Port Scan</option>
+                <option value="dns">🔹 DNS Lookup</option>
+                <option value="ssl">🔹 SSL Check</option>
+                <option value="cms">🔹 CMS Detection</option>
+                <option value="subdomains">🔹 Subdomain Enumeration</option>
+                <option value="whois">🔹 WHOIS Lookup</option>
+                <option value="nmap">🔹 Advanced Nmap Scan</option>
+            </select>
+            <button type="submit">🚀 Start Scan</button>
+        </form>
+    </div>
+
+    <!-- 🔹 Moving Containers Section -->
+    <div class="tools-container">
+        <div class="moving-container">
+            <h2>🛠️ Port Scanner</h2>
+            <p>Scans open ports and identifies services running on the target.</p>
+        </div>
+        <br>
+        <div class="moving-container">
+            <h2>🌐 DNS Lookup</h2>
+            <p>Retrieves DNS records including A, MX, CNAME, and TXT.</p>
+        </div>
+        <br>
+        <div class="moving-container">
+            <h2>🔒 SSL Check</h2>
+            <p>Analyzes SSL certificates, expiration, and security details.</p>
+        </div>
+        <br>
+        <div class="moving-container">
+            <h2>🛡️ Nmap Scanner</h2>
+            <p>Performs advanced Nmap scans to detect vulnerabilities.</p>
+        </div>
+        <br>
+        <div class="moving-container">
+            <h2>📜 WHOIS Lookup</h2>
+            <p>Fetches domain registration details and owner information.</p>
+        </div>
+    </div>    
+    <!-- 🔹 Footer -->
+    <footer>
+        <p>&copy; 2025 Cyber Security Scanner | Built by Vishwa</p>
+    </footer>
+</body>
+</html>

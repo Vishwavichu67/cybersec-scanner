@@ -1,0 +1,57 @@
+🔍 CYBERSECURITY SCAN REPORT
+==================================================
+
+🔹 Ports:
+------------------------------
+  - Port 21 is OPEN
+  - Port 80 is OPEN
+  - Port 443 is OPEN
+
+🔹 Dns Info:
+------------------------------
+  - Ip Address: 52.76.120.174
+
+🔹 Reverse Dns:
+------------------------------
+ec2-52-76-120-174.ap-southeast-1.compute.amazonaws.com
+
+🔹 Dns Records:
+------------------------------
+  - A: ['52.76.120.174', '52.74.232.59']
+  - Mx: No record found
+  - Cname: No record found
+  - Txt: No record found
+
+🔹 Ssl Info:
+------------------------------
+  - Issued To: *.netlify.app
+  - Issuer: DigiCert Inc
+  - Valid From: 2025-01-31
+  - Valid Until: 2026-03-03
+  - Days Left: 340
+
+🔹 Cms Info:
+------------------------------
+  - Target: http://vichu-portfolio.netlify.app
+  - Cms: Unknown
+
+🔹 Subdomains:
+------------------------------
+  - No subdomains found
+
+🔹 Whois Info:
+------------------------------
+  - Domain Name: None
+  - Registrar: None
+  - Creation Date: None
+  - Expiration Date: None
+  - Name Servers: None
+
+🔹 Nmap Results:
+------------------------------
+  - Ip: 52.76.120.174
+  - State: up
+  - Tcp: [{'Port': 21, 'State': 'open', 'Service': 'ftp'}, {'Port': 80, 'State': 'open', 'Service': 'http'}, {'Port': 443, 'State': 'open', 'Service': 'http'}]
+
+==================================================
+📌 End of Report

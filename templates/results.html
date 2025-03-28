@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Scan Results for {{ target }}</h1>
+
+        <div class="results-section">
+            {% for key, value in results.items() %}
+                <div class="result-box">
+                    <h2>{{ key.replace('_', ' ').title() }}</h2>
+                    {% if value is string %}
+                        <p>{{ value }}</p>
+                    {% elif value is mapping %}
+                        <ul>
+                            {% for sub_key, sub_value in value.items() %}
+                                <li><strong>{{ sub_key }}:</strong> {{ sub_value }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% elif value is iterable %}
+                        <ul>
+                            {% for item in value %}
+                                <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>No data available</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        <a href="{{ url_for('download_file', filename=target + '.txt') }}" class="download-btn">📥 Download Report</a>
+        <a href="/" class="home-btn">🔄 Run Another Scan</a>
+    </div>
+</body>
+</html>

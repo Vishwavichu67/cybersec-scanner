@@ -1,0 +1,11 @@
+🔍 CYBERSECURITY SCAN REPORT
+==================================================
+
+🔹 Nmap Results:
+------------------------------
+  - Ip: 147.79.69.97
+  - State: up
+  - Tcp: [{'Port': 80, 'State': 'open', 'Service': 'http'}, {'Port': 443, 'State': 'open', 'Service': 'https'}]
+
+==================================================
+📌 End of Report
