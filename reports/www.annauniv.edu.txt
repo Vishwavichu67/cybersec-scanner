@@ -1,1 +1,0 @@
-{'whois_info': {'Domain Name': 'ANNAUNIV.EDU', 'Registrar': None, 'Creation Date': datetime.datetime(1998, 5, 22, 0, 0), 'Expiration Date': datetime.datetime(2027, 7, 31, 0, 0), 'Name Servers': None}}
