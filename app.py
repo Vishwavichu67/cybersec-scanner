@@ -7,6 +7,7 @@ from utils.cms_detect import detect_cms
 from utils.subdomain import find_subdomains
 from utils.whois_lookup import get_whois_info
 from utils.nmap_scan import advanced_nmap_scan
+from urllib.parse import quote as url_quote
 import os
 import re
 
