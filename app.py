@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify, send_from_directory, send_file
-from database.db import save_scan_result, get_scan_results
 from utils.scanner import scan_ports
 from utils.dns_lookup import get_dns_info, get_reverse_dns, get_dns_records
 from utils.ssl_checkup import check_ssl_certificate
@@ -85,9 +84,6 @@ def home():
                 "whois_info": get_whois_info(target),
                 "nmap_results": advanced_nmap_scan(target),
             }
-
-        # Save results to MongoDB
-        save_scan_result(target, scan_type or "full_scan", scan_results)
 
         # Save scan results to a report file
         safe_target = re.sub(r'[^a-zA-Z0-9.-]', '_', target)  # Remove invalid characters
