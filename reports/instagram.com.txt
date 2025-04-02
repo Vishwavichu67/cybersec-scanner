@@ -1,0 +1,20 @@
+🔍 CYBERSECURITY SCAN REPORT
+==================================================
+
+🔹 Dns Info:
+------------------------------
+  - Ip Address: 163.70.139.174
+
+🔹 Reverse Dns:
+------------------------------
+instagram-p42-shv-02-tir3.fbcdn.net
+
+🔹 Dns Records:
+------------------------------
+  - A: ['163.70.139.174']
+  - Mx: ['10 mxb-00082601.gslb.pphosted.com.', '10 mxa-00082601.gslb.pphosted.com.']
+  - Cname: No record found
+  - Txt: ['"google-site-verification=_iQgLr68Rdg7YnN2PqOljSG5dnWOFUUXISF9R77fs5c"', '"v=spf1 include:facebookmail.com include:_spf.fb.com -all"', '"hyWdekepiNsp/V9b1JCR+wZDdzbESurl4GqY+FLMfiN+7aeFaway0Art+kNDHeL5OnGZipNeV/iIC+lOONSQVQ=="', '"4cbb1b68-601f-4801-8e7f-e8f68a4a41dd"', '"adobe-idp-site-verification=367fda82-a8bb-46cf-9cff-0062d452d229"', '"ms=ms86975275"', '"google-site-verification=GGtId51KFyq0hqX2xNvt1u0P9Xp0C7k6pp9do49fCNw"', '"nEXgIFIbDifAKlSMQvAhly5SA-vpsAkm5wiOdwdkrzY"']
+
+==================================================
+📌 End of Report
