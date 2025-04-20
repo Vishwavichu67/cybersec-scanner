@@ -300,3 +300,62 @@ footer {
         transform: translateY(-10px);
     }
 }
+/* 📱 Responsive Mobile Styling */
+@media screen and (max-width: 600px) {
+    .about-page, 
+    .container {
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .about-page h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .feature-list li,
+    .tools-explanation li {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .social-links,
+    .icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-links img,
+    .icons img {
+        width: 32px;
+        padding: 4px;
+    }
+
+    footer {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    .feature-list {
+        padding: 0;
+    }
+}
